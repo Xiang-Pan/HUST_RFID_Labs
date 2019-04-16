@@ -1,0 +1,169 @@
+\hypertarget{tools_8h}{}\section{tools/tools.h File Reference}
+\label{tools_8h}\index{tools/tools.h@{tools/tools.h}}
+{\ttfamily \#include $<$Q\+String$>$}\newline
+{\ttfamily \#include $<$Q\+Date\+Time$>$}\newline
+{\ttfamily \#include $<$Q\+Time$>$}\newline
+{\ttfamily \#include $<$Q\+Date$>$}\newline
+{\ttfamily \#include $<$Q\+Cryptographic\+Hash$>$}\newline
+{\ttfamily \#include $<$Q\+Byte\+Array$>$}\newline
+{\ttfamily \#include $<$Q\+Sql\+Table\+Model$>$}\newline
+{\ttfamily \#include $<$Q\+File$>$}\newline
+{\ttfamily \#include $<$Q\+File\+Dialog$>$}\newline
+{\ttfamily \#include $<$Q\+Text\+Stream$>$}\newline
+Include dependency graph for tools.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tools_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tools_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tools_8h_ac4ec0a338c1546cbff3dfd95a3eac2de}{C\+U\+R\+R\+E\+N\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}~\char`\"{}一卡通管理系统 V1.\+0\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{tools_8h_a8997e5cfa09ec239bd4c851065261274}{Current\+Date\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前日期和时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8h_ab2429671591d37c269b42d73ba87521d}{Get\+M\+D5\+String}} (Q\+String src)
+\item 
+bool \mbox{\hyperlink{tools_8h_ad2785126c9d540aa7f83c62b25335bd6}{export\+\_\+table}} (const Q\+String table\+Name)
+\item 
+quint8 \mbox{\hyperlink{tools_8h_ae5ae51a360f8d3235bea325b6e4462a0}{String\+To\+Hex}} (Q\+String string, quint8 $\ast$hex)
+\item 
+void \mbox{\hyperlink{tools_8h_a485150ce2280036069db9d4c633646cd}{Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX}} (const Q\+String \&str, quint8 $\ast$buf, quint8 len)
+\begin{DoxyCompactList}\small\item\em Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8h_a480c23cf99fbcaae7f4003069147e4b5}{Char\+Stringto\+Hex\+String}} (Q\+String space, const char $\ast$src, int start, int end)
+\begin{DoxyCompactList}\small\item\em 普通字符串转为16进制字符串 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8h_a107fa26ed0cd09983e6bb5006221bf89}{Char\+Stringto\+Hex\+String}} (Q\+String space, const char $\ast$src, int len)
+\begin{DoxyCompactList}\small\item\em 普通字符串转为16进制字符串 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8h_a376359205fdf9befa5c5a0d03a123830}{Current\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前的时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8h_a2cbeb31d327a5c474fa8f3dd9816aacb}{Current\+M\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前的时间 \end{DoxyCompactList}\item 
+Q\+String\+List \mbox{\hyperlink{tools_8h_ab962ef473d4f1014f25ba2b9d521c6ff}{get\+Serial\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tools_8h_ac4ec0a338c1546cbff3dfd95a3eac2de}\label{tools_8h_ac4ec0a338c1546cbff3dfd95a3eac2de}} 
+\index{tools.h@{tools.h}!CURRENT\_VERSION@{CURRENT\_VERSION}}
+\index{CURRENT\_VERSION@{CURRENT\_VERSION}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{CURRENT\_VERSION}{CURRENT\_VERSION}}
+{\footnotesize\ttfamily \#define C\+U\+R\+R\+E\+N\+T\+\_\+\+V\+E\+R\+S\+I\+ON~\char`\"{}一卡通管理系统 V1.\+0\char`\"{}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tools_8h_a480c23cf99fbcaae7f4003069147e4b5}\label{tools_8h_a480c23cf99fbcaae7f4003069147e4b5}} 
+\index{tools.h@{tools.h}!CharStringtoHexString@{CharStringtoHexString}}
+\index{CharStringtoHexString@{CharStringtoHexString}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{CharStringtoHexString()}{CharStringtoHexString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+String Char\+Stringto\+Hex\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{space,  }\item[{const char $\ast$}]{src,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+普通字符串转为16进制字符串 
+
+\mbox{\Hypertarget{tools_8h_a107fa26ed0cd09983e6bb5006221bf89}\label{tools_8h_a107fa26ed0cd09983e6bb5006221bf89}} 
+\index{tools.h@{tools.h}!CharStringtoHexString@{CharStringtoHexString}}
+\index{CharStringtoHexString@{CharStringtoHexString}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{CharStringtoHexString()}{CharStringtoHexString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+String Char\+Stringto\+Hex\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{space,  }\item[{const char $\ast$}]{src,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+普通字符串转为16进制字符串 
+
+\mbox{\Hypertarget{tools_8h_a8997e5cfa09ec239bd4c851065261274}\label{tools_8h_a8997e5cfa09ec239bd4c851065261274}} 
+\index{tools.h@{tools.h}!CurrentDateTime@{CurrentDateTime}}
+\index{CurrentDateTime@{CurrentDateTime}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{CurrentDateTime()}{CurrentDateTime()}}
+{\footnotesize\ttfamily Q\+String Current\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前日期和时间 
+
+\mbox{\Hypertarget{tools_8h_a2cbeb31d327a5c474fa8f3dd9816aacb}\label{tools_8h_a2cbeb31d327a5c474fa8f3dd9816aacb}} 
+\index{tools.h@{tools.h}!CurrentMTime@{CurrentMTime}}
+\index{CurrentMTime@{CurrentMTime}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{CurrentMTime()}{CurrentMTime()}}
+{\footnotesize\ttfamily Q\+String Current\+M\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前的时间 
+
+\mbox{\Hypertarget{tools_8h_a376359205fdf9befa5c5a0d03a123830}\label{tools_8h_a376359205fdf9befa5c5a0d03a123830}} 
+\index{tools.h@{tools.h}!CurrentTime@{CurrentTime}}
+\index{CurrentTime@{CurrentTime}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{CurrentTime()}{CurrentTime()}}
+{\footnotesize\ttfamily Q\+String Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前的时间 
+
+\mbox{\Hypertarget{tools_8h_ad2785126c9d540aa7f83c62b25335bd6}\label{tools_8h_ad2785126c9d540aa7f83c62b25335bd6}} 
+\index{tools.h@{tools.h}!export\_table@{export\_table}}
+\index{export\_table@{export\_table}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{export\_table()}{export\_table()}}
+{\footnotesize\ttfamily bool export\+\_\+table (\begin{DoxyParamCaption}\item[{const Q\+String}]{table\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tools_8h_ab2429671591d37c269b42d73ba87521d}\label{tools_8h_ab2429671591d37c269b42d73ba87521d}} 
+\index{tools.h@{tools.h}!GetMD5String@{GetMD5String}}
+\index{GetMD5String@{GetMD5String}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{GetMD5String()}{GetMD5String()}}
+{\footnotesize\ttfamily Q\+String Get\+M\+D5\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{src }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & 用户输入的字符串 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+D5字符串 M\+D5加密 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tools_8h_ab962ef473d4f1014f25ba2b9d521c6ff}\label{tools_8h_ab962ef473d4f1014f25ba2b9d521c6ff}} 
+\index{tools.h@{tools.h}!getSerialName@{getSerialName}}
+\index{getSerialName@{getSerialName}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{getSerialName()}{getSerialName()}}
+{\footnotesize\ttfamily Q\+String\+List get\+Serial\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tools_8h_a485150ce2280036069db9d4c633646cd}\label{tools_8h_a485150ce2280036069db9d4c633646cd}} 
+\index{tools.h@{tools.h}!QSTRING\_TO\_HEX@{QSTRING\_TO\_HEX}}
+\index{QSTRING\_TO\_HEX@{QSTRING\_TO\_HEX}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{QSTRING\_TO\_HEX()}{QSTRING\_TO\_HEX()}}
+{\footnotesize\ttfamily void Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str,  }\item[{quint8 $\ast$}]{buf,  }\item[{quint8}]{len }\end{DoxyParamCaption})}
+
+
+
+Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Q\+String指针 \\
+\hline
+{\em buf} & 字节数组指针 \\
+\hline
+{\em len} & 要转化的长度 Q\+String 转十六进制数组 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tools_8h_ae5ae51a360f8d3235bea325b6e4462a0}\label{tools_8h_ae5ae51a360f8d3235bea325b6e4462a0}} 
+\index{tools.h@{tools.h}!StringToHex@{StringToHex}}
+\index{StringToHex@{StringToHex}!tools.h@{tools.h}}
+\subsubsection{\texorpdfstring{StringToHex()}{StringToHex()}}
+{\footnotesize\ttfamily quint8 String\+To\+Hex (\begin{DoxyParamCaption}\item[{Q\+String}]{string,  }\item[{quint8 $\ast$}]{hex }\end{DoxyParamCaption})}
+

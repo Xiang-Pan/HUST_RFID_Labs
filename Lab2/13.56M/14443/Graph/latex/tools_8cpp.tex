@@ -1,0 +1,154 @@
+\hypertarget{tools_8cpp}{}\section{tools/tools.cpp File Reference}
+\label{tools_8cpp}\index{tools/tools.cpp@{tools/tools.cpp}}
+{\ttfamily \#include \char`\"{}tools.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Qt\+Serial\+Port/\+Q\+Serial\+Port$>$}\newline
+{\ttfamily \#include $<$Qt\+Serial\+Port/\+Q\+Serial\+Port\+Info$>$}\newline
+Include dependency graph for tools.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tools_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{tools_8cpp_a8997e5cfa09ec239bd4c851065261274}{Current\+Date\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前日期和时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8cpp_ab2429671591d37c269b42d73ba87521d}{Get\+M\+D5\+String}} (Q\+String src)
+\item 
+Q\+String \mbox{\hyperlink{tools_8cpp_a376359205fdf9befa5c5a0d03a123830}{Current\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前的时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8cpp_a2cbeb31d327a5c474fa8f3dd9816aacb}{Current\+M\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前的时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8cpp_a107fa26ed0cd09983e6bb5006221bf89}{Char\+Stringto\+Hex\+String}} (Q\+String space, const char $\ast$src, int len)
+\begin{DoxyCompactList}\small\item\em 普通字符串转为16进制字符串 \end{DoxyCompactList}\item 
+quint8 \mbox{\hyperlink{tools_8cpp_ae5ae51a360f8d3235bea325b6e4462a0}{String\+To\+Hex}} (Q\+String string, quint8 $\ast$hex)
+\item 
+void \mbox{\hyperlink{tools_8cpp_a485150ce2280036069db9d4c633646cd}{Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX}} (const Q\+String \&str, quint8 $\ast$buf, quint8 len)
+\begin{DoxyCompactList}\small\item\em Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{tools_8cpp_a480c23cf99fbcaae7f4003069147e4b5}{Char\+Stringto\+Hex\+String}} (Q\+String space, const char $\ast$src, int start, int end)
+\begin{DoxyCompactList}\small\item\em 普通字符串转为16进制字符串 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{tools_8cpp_ad2785126c9d540aa7f83c62b25335bd6}{export\+\_\+table}} (const Q\+String table\+Name)
+\item 
+Q\+String\+List \mbox{\hyperlink{tools_8cpp_ab962ef473d4f1014f25ba2b9d521c6ff}{get\+Serial\+Name}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+String\+List \mbox{\hyperlink{tools_8cpp_ac217dbb18b95c2561203998addb79265}{list}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tools_8cpp_a107fa26ed0cd09983e6bb5006221bf89}\label{tools_8cpp_a107fa26ed0cd09983e6bb5006221bf89}} 
+\index{tools.cpp@{tools.cpp}!CharStringtoHexString@{CharStringtoHexString}}
+\index{CharStringtoHexString@{CharStringtoHexString}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{CharStringtoHexString()}{CharStringtoHexString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+String Char\+Stringto\+Hex\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{space,  }\item[{const char $\ast$}]{src,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+普通字符串转为16进制字符串 
+
+\mbox{\Hypertarget{tools_8cpp_a480c23cf99fbcaae7f4003069147e4b5}\label{tools_8cpp_a480c23cf99fbcaae7f4003069147e4b5}} 
+\index{tools.cpp@{tools.cpp}!CharStringtoHexString@{CharStringtoHexString}}
+\index{CharStringtoHexString@{CharStringtoHexString}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{CharStringtoHexString()}{CharStringtoHexString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+String Char\+Stringto\+Hex\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{space,  }\item[{const char $\ast$}]{src,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+普通字符串转为16进制字符串 
+
+\mbox{\Hypertarget{tools_8cpp_a8997e5cfa09ec239bd4c851065261274}\label{tools_8cpp_a8997e5cfa09ec239bd4c851065261274}} 
+\index{tools.cpp@{tools.cpp}!CurrentDateTime@{CurrentDateTime}}
+\index{CurrentDateTime@{CurrentDateTime}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{CurrentDateTime()}{CurrentDateTime()}}
+{\footnotesize\ttfamily Q\+String Current\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前日期和时间 
+
+\mbox{\Hypertarget{tools_8cpp_a2cbeb31d327a5c474fa8f3dd9816aacb}\label{tools_8cpp_a2cbeb31d327a5c474fa8f3dd9816aacb}} 
+\index{tools.cpp@{tools.cpp}!CurrentMTime@{CurrentMTime}}
+\index{CurrentMTime@{CurrentMTime}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{CurrentMTime()}{CurrentMTime()}}
+{\footnotesize\ttfamily Q\+String Current\+M\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前的时间 
+
+\mbox{\Hypertarget{tools_8cpp_a376359205fdf9befa5c5a0d03a123830}\label{tools_8cpp_a376359205fdf9befa5c5a0d03a123830}} 
+\index{tools.cpp@{tools.cpp}!CurrentTime@{CurrentTime}}
+\index{CurrentTime@{CurrentTime}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{CurrentTime()}{CurrentTime()}}
+{\footnotesize\ttfamily Q\+String Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前的时间 
+
+\mbox{\Hypertarget{tools_8cpp_ad2785126c9d540aa7f83c62b25335bd6}\label{tools_8cpp_ad2785126c9d540aa7f83c62b25335bd6}} 
+\index{tools.cpp@{tools.cpp}!export\_table@{export\_table}}
+\index{export\_table@{export\_table}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{export\_table()}{export\_table()}}
+{\footnotesize\ttfamily bool export\+\_\+table (\begin{DoxyParamCaption}\item[{const Q\+String}]{table\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tools_8cpp_ab2429671591d37c269b42d73ba87521d}\label{tools_8cpp_ab2429671591d37c269b42d73ba87521d}} 
+\index{tools.cpp@{tools.cpp}!GetMD5String@{GetMD5String}}
+\index{GetMD5String@{GetMD5String}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{GetMD5String()}{GetMD5String()}}
+{\footnotesize\ttfamily Q\+String Get\+M\+D5\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{src }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & 用户输入的字符串 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+D5字符串 M\+D5加密 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tools_8cpp_ab962ef473d4f1014f25ba2b9d521c6ff}\label{tools_8cpp_ab962ef473d4f1014f25ba2b9d521c6ff}} 
+\index{tools.cpp@{tools.cpp}!getSerialName@{getSerialName}}
+\index{getSerialName@{getSerialName}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{getSerialName()}{getSerialName()}}
+{\footnotesize\ttfamily Q\+String\+List get\+Serial\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tools_8cpp_a485150ce2280036069db9d4c633646cd}\label{tools_8cpp_a485150ce2280036069db9d4c633646cd}} 
+\index{tools.cpp@{tools.cpp}!QSTRING\_TO\_HEX@{QSTRING\_TO\_HEX}}
+\index{QSTRING\_TO\_HEX@{QSTRING\_TO\_HEX}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{QSTRING\_TO\_HEX()}{QSTRING\_TO\_HEX()}}
+{\footnotesize\ttfamily void Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str,  }\item[{quint8 $\ast$}]{buf,  }\item[{quint8}]{len }\end{DoxyParamCaption})}
+
+
+
+Q\+S\+T\+R\+I\+N\+G\+\_\+\+T\+O\+\_\+\+H\+EX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Q\+String指针 \\
+\hline
+{\em buf} & 字节数组指针 \\
+\hline
+{\em len} & 要转化的长度 Q\+String 转十六进制数组 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tools_8cpp_ae5ae51a360f8d3235bea325b6e4462a0}\label{tools_8cpp_ae5ae51a360f8d3235bea325b6e4462a0}} 
+\index{tools.cpp@{tools.cpp}!StringToHex@{StringToHex}}
+\index{StringToHex@{StringToHex}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{StringToHex()}{StringToHex()}}
+{\footnotesize\ttfamily quint8 String\+To\+Hex (\begin{DoxyParamCaption}\item[{Q\+String}]{string,  }\item[{quint8 $\ast$}]{hex }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{tools_8cpp_ac217dbb18b95c2561203998addb79265}\label{tools_8cpp_ac217dbb18b95c2561203998addb79265}} 
+\index{tools.cpp@{tools.cpp}!list@{list}}
+\index{list@{list}!tools.cpp@{tools.cpp}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily Q\+String\+List list\hspace{0.3cm}{\ttfamily [static]}}
+
