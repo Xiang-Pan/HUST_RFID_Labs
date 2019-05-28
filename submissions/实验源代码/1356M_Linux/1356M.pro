@@ -1,0 +1,61 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2016-09-07T08:33:44
+#
+#-------------------------------------------------
+
+QT       += core gui serialport sql
+QT       += charts
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = 1356M
+TEMPLATE = app
+
+
+SOURCES += main.cpp\
+    stat_dialog.cpp \
+        widget.cpp \
+    usermanage.cpp \
+    booksmanage.cpp \
+    tools.cpp \
+    sqlite.cpp \
+    uhf_thread.cpp \
+    borrow_return.cpp \
+    record.cpp
+
+HEADERS  += widget.h \
+    stat_dialog.h \
+    usermanage.h \
+    booksmanage.h \
+    inc/m1356dll.h \
+    inc/m1356dll_global.h \
+    tools.h \
+    sqlite.h \
+    uhf_thread.h \
+    borrow_return.h \
+    record.h
+
+
+LIBS += -L/home/hover/Desktop/Labs/HUST_RFID_Labs/Lab5/1356M_Linux/M1356Dll_Linux -lM1356Dll
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/lib/ -lM1356Dll
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/lib/ -lM1356Dll
+else:unix: LIBS += -L$$PWD/lib/ -lM1356Dll
+
+INCLUDEPATH += $$PWD/
+DEPENDPATH += $$PWD/
+
+win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/lib/libM1356Dll.a
+else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/lib/libM1356Dll.a
+else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/lib/M1356Dll.lib
+else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/lib/M1356Dll.lib
+else:unix: PRE_TARGETDEPS += $$PWD/lib/libM1356Dll.a
+
+RESOURCES += \
+    1356m.qrc
+
+STATECHARTS +=
+
+FORMS += \
+    stat_dialog.ui

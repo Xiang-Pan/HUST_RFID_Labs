@@ -1,0 +1,207 @@
+\hypertarget{class_u_h_f___thread}{}\section{U\+H\+F\+\_\+\+Thread Class Reference}
+\label{class_u_h_f___thread}\index{UHF\_Thread@{UHF\_Thread}}
+
+
+{\ttfamily \#include $<$uhf\+\_\+thread.\+h$>$}
+
+Inheritance diagram for U\+H\+F\+\_\+\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_h_f___thread}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_aa3b7dd0bbada4349d59821aab8a17927}{received\+Msg}} (Q\+Byte\+Array)
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_a232f1c855e0b835beebcdb4a6b6a4484}{cycle}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_h_f___thread_a4e345d08f3f78642458925017371cac2}{U\+H\+F\+\_\+\+Thread}} (Q\+Object $\ast$parent=0)
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c}{U\+A\+R\+T\+\_\+\+Connect}} (Q\+String Com\+Name, int Baudrate)
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8}{U\+A\+R\+T\+\_\+\+Disconnect}} ()
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a6dcb8fe026e47d35c7d992b860c86492}{Read\+Card\+ID}} ()
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a0bb3c8d9ac1290986ce318819dc4ecbf}{Init\+Uhf}} ()
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_aa7aa23919d844f6da517ecec5747bed5}{str2hex}} (const Q\+String \&str, quint8 $\ast$buf, quint8 len)
+\begin{DoxyCompactList}\small\item\em str2hex \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a1ec4510fd4d722b34d6cd33c3820f897}{Set\+Card\+Record}} (Q\+String user\+ID, Q\+String book\+ID)
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_af1bc225a4a6a68a1dd79eb7d8688648d}{Get\+Card\+Record}} (Q\+String user\+ID, Q\+String book\+ID)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{class_u_h_f___thread_a04164c9431f66a3e25ea1206ac1b1adc}{last\+\_\+cmd}}
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_ab40811b93c5e8b31c4f40cc79139e504}{n\+Run\+Flag}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file uhf\+\_\+thread.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_h_f___thread_a4e345d08f3f78642458925017371cac2}\label{class_u_h_f___thread_a4e345d08f3f78642458925017371cac2}} 
+\index{UHF\_Thread@{UHF\_Thread}!UHF\_Thread@{UHF\_Thread}}
+\index{UHF\_Thread@{UHF\_Thread}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UHF\_Thread()}{UHF\_Thread()}}
+{\footnotesize\ttfamily U\+H\+F\+\_\+\+Thread\+::\+U\+H\+F\+\_\+\+Thread (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 6 of file uhf\+\_\+thread.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_h_f___thread_a232f1c855e0b835beebcdb4a6b6a4484}\label{class_u_h_f___thread_a232f1c855e0b835beebcdb4a6b6a4484}} 
+\index{UHF\_Thread@{UHF\_Thread}!cycle@{cycle}}
+\index{cycle@{cycle}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{cycle}{cycle}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::cycle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_u_h_f___thread_af1bc225a4a6a68a1dd79eb7d8688648d}\label{class_u_h_f___thread_af1bc225a4a6a68a1dd79eb7d8688648d}} 
+\index{UHF\_Thread@{UHF\_Thread}!GetCardRecord@{GetCardRecord}}
+\index{GetCardRecord@{GetCardRecord}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{GetCardRecord()}{GetCardRecord()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+Get\+Card\+Record (\begin{DoxyParamCaption}\item[{Q\+String}]{user\+ID,  }\item[{Q\+String}]{book\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 193 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_a0bb3c8d9ac1290986ce318819dc4ecbf}\label{class_u_h_f___thread_a0bb3c8d9ac1290986ce318819dc4ecbf}} 
+\index{UHF\_Thread@{UHF\_Thread}!InitUhf@{InitUhf}}
+\index{InitUhf@{InitUhf}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{InitUhf()}{InitUhf()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+Init\+Uhf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 218 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_a6dcb8fe026e47d35c7d992b860c86492}\label{class_u_h_f___thread_a6dcb8fe026e47d35c7d992b860c86492}} 
+\index{UHF\_Thread@{UHF\_Thread}!ReadCardID@{ReadCardID}}
+\index{ReadCardID@{ReadCardID}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{ReadCardID()}{ReadCardID()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+Read\+Card\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_aa3b7dd0bbada4349d59821aab8a17927}\label{class_u_h_f___thread_aa3b7dd0bbada4349d59821aab8a17927}} 
+\index{UHF\_Thread@{UHF\_Thread}!receivedMsg@{receivedMsg}}
+\index{receivedMsg@{receivedMsg}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{receivedMsg}{receivedMsg}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::received\+Msg (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818}\label{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818}} 
+\index{UHF\_Thread@{UHF\_Thread}!run@{run}}
+\index{run@{run}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 11 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_a1ec4510fd4d722b34d6cd33c3820f897}\label{class_u_h_f___thread_a1ec4510fd4d722b34d6cd33c3820f897}} 
+\index{UHF\_Thread@{UHF\_Thread}!SetCardRecord@{SetCardRecord}}
+\index{SetCardRecord@{SetCardRecord}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{SetCardRecord()}{SetCardRecord()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+Set\+Card\+Record (\begin{DoxyParamCaption}\item[{Q\+String}]{user\+ID,  }\item[{Q\+String}]{book\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 140 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_aa7aa23919d844f6da517ecec5747bed5}\label{class_u_h_f___thread_aa7aa23919d844f6da517ecec5747bed5}} 
+\index{UHF\_Thread@{UHF\_Thread}!str2hex@{str2hex}}
+\index{str2hex@{str2hex}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{str2hex()}{str2hex()}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::str2hex (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str,  }\item[{quint8 $\ast$}]{buf,  }\item[{quint8}]{len }\end{DoxyParamCaption})}
+
+
+
+str2hex 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Q\+String指针 \\
+\hline
+{\em buf} & 字节数组指针 \\
+\hline
+{\em len} & 要转化的长度 Q\+String 转十六进制数组 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c}\label{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c}} 
+\index{UHF\_Thread@{UHF\_Thread}!UART\_Connect@{UART\_Connect}}
+\index{UART\_Connect@{UART\_Connect}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UART\_Connect()}{UART\_Connect()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+U\+A\+R\+T\+\_\+\+Connect (\begin{DoxyParamCaption}\item[{Q\+String}]{Com\+Name,  }\item[{int}]{Baudrate }\end{DoxyParamCaption})}
+
+
+
+Definition at line 246 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8}\label{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8}} 
+\index{UHF\_Thread@{UHF\_Thread}!UART\_Disconnect@{UART\_Disconnect}}
+\index{UART\_Disconnect@{UART\_Disconnect}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UART\_Disconnect()}{UART\_Disconnect()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+U\+A\+R\+T\+\_\+\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 239 of file uhf\+\_\+thread.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_h_f___thread_a04164c9431f66a3e25ea1206ac1b1adc}\label{class_u_h_f___thread_a04164c9431f66a3e25ea1206ac1b1adc}} 
+\index{UHF\_Thread@{UHF\_Thread}!last\_cmd@{last\_cmd}}
+\index{last\_cmd@{last\_cmd}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{last\_cmd}{last\_cmd}}
+{\footnotesize\ttfamily Q\+String U\+H\+F\+\_\+\+Thread\+::last\+\_\+cmd}
+
+
+
+Definition at line 16 of file uhf\+\_\+thread.\+h.
+
+\mbox{\Hypertarget{class_u_h_f___thread_ab40811b93c5e8b31c4f40cc79139e504}\label{class_u_h_f___thread_ab40811b93c5e8b31c4f40cc79139e504}} 
+\index{UHF\_Thread@{UHF\_Thread}!nRunFlag@{nRunFlag}}
+\index{nRunFlag@{nRunFlag}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{nRunFlag}{nRunFlag}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::n\+Run\+Flag}
+
+
+
+Definition at line 27 of file uhf\+\_\+thread.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{uhf__thread_8h}{uhf\+\_\+thread.\+h}}\item 
+\mbox{\hyperlink{uhf__thread_8cpp}{uhf\+\_\+thread.\+cpp}}\end{DoxyCompactItemize}

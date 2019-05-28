@@ -1,0 +1,51 @@
+\hypertarget{uhf__thread_8cpp}{}\section{uhf\+\_\+thread.\+cpp File Reference}
+\label{uhf__thread_8cpp}\index{uhf\_thread.cpp@{uhf\_thread.cpp}}
+{\ttfamily \#include \char`\"{}uhf\+\_\+thread.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{uhf__thread_8cpp_ad2af494bbd433546064b907de08a4104}{B\+U\+I\+L\+D\+\_\+\+U\+I\+N\+T16}}(lo\+Byte,  hi\+Byte)~((uint16)(((lo\+Byte) \& 0x00\+F\+F) + (((hi\+Byte) \& 0x00\+F\+F) $<$$<$ 8)))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8 \mbox{\hyperlink{uhf__thread_8cpp_a9b788573b5517f89558589026b25ad95}{R\+C632\+\_\+\+Uart\+Calc\+F\+C\+S\+\_\+\+Test}} (uint8 $\ast$msg\+\_\+ptr, uint8 len)
+\item 
+uint8 $\ast$ \mbox{\hyperlink{uhf__thread_8cpp_ad96cd0586fe41c649280202698486377}{R\+C632\+\_\+\+Send\+Cmd\+Req\+\_\+\+Test}} (uint16 cmd, const uint8 $\ast$data, uint16 len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{uhf__thread_8cpp_ad2af494bbd433546064b907de08a4104}\label{uhf__thread_8cpp_ad2af494bbd433546064b907de08a4104}} 
+\index{uhf\_thread.cpp@{uhf\_thread.cpp}!BUILD\_UINT16@{BUILD\_UINT16}}
+\index{BUILD\_UINT16@{BUILD\_UINT16}!uhf\_thread.cpp@{uhf\_thread.cpp}}
+\subsubsection{\texorpdfstring{BUILD\_UINT16}{BUILD\_UINT16}}
+{\footnotesize\ttfamily \#define B\+U\+I\+L\+D\+\_\+\+U\+I\+N\+T16(\begin{DoxyParamCaption}\item[{}]{lo\+Byte,  }\item[{}]{hi\+Byte }\end{DoxyParamCaption})~((uint16)(((lo\+Byte) \& 0x00\+F\+F) + (((hi\+Byte) \& 0x00\+F\+F) $<$$<$ 8)))}
+
+
+
+Definition at line 2 of file uhf\+\_\+thread.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{uhf__thread_8cpp_ad96cd0586fe41c649280202698486377}\label{uhf__thread_8cpp_ad96cd0586fe41c649280202698486377}} 
+\index{uhf\_thread.cpp@{uhf\_thread.cpp}!RC632\_SendCmdReq\_Test@{RC632\_SendCmdReq\_Test}}
+\index{RC632\_SendCmdReq\_Test@{RC632\_SendCmdReq\_Test}!uhf\_thread.cpp@{uhf\_thread.cpp}}
+\subsubsection{\texorpdfstring{RC632\_SendCmdReq\_Test()}{RC632\_SendCmdReq\_Test()}}
+{\footnotesize\ttfamily uint8$\ast$ R\+C632\+\_\+\+Send\+Cmd\+Req\+\_\+\+Test (\begin{DoxyParamCaption}\item[{uint16}]{cmd,  }\item[{const uint8 $\ast$}]{data,  }\item[{uint16}]{len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file uhf\+\_\+thread.\+cpp.
+
+\mbox{\Hypertarget{uhf__thread_8cpp_a9b788573b5517f89558589026b25ad95}\label{uhf__thread_8cpp_a9b788573b5517f89558589026b25ad95}} 
+\index{uhf\_thread.cpp@{uhf\_thread.cpp}!RC632\_UartCalcFCS\_Test@{RC632\_UartCalcFCS\_Test}}
+\index{RC632\_UartCalcFCS\_Test@{RC632\_UartCalcFCS\_Test}!uhf\_thread.cpp@{uhf\_thread.cpp}}
+\subsubsection{\texorpdfstring{RC632\_UartCalcFCS\_Test()}{RC632\_UartCalcFCS\_Test()}}
+{\footnotesize\ttfamily uint8 R\+C632\+\_\+\+Uart\+Calc\+F\+C\+S\+\_\+\+Test (\begin{DoxyParamCaption}\item[{uint8 $\ast$}]{msg\+\_\+ptr,  }\item[{uint8}]{len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file uhf\+\_\+thread.\+cpp.
+

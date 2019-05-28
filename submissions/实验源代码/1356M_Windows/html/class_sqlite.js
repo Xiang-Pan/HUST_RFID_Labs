@@ -1,0 +1,28 @@
+var class_sqlite =
+[
+    [ "Sqlite", "class_sqlite.html#a8aef4e64531e1522f892c0c6ec69cdff", null ],
+    [ "~Sqlite", "class_sqlite.html#adc35a543dca91edc3ffb90a3825dd54a", null ],
+    [ "Connect", "class_sqlite.html#aa93509c1e19a7d486f4f38ff4bc78a89", null ],
+    [ "CreateBookTable", "class_sqlite.html#a2c8180569a048b3e69abd84a044caec6", null ],
+    [ "CreateRecordTable", "class_sqlite.html#ae84aab901a62d1876dcfca3f190af12c", null ],
+    [ "CreateUserTable", "class_sqlite.html#aa0840501ef42abf7fff8efc064caae01", null ],
+    [ "Delete", "class_sqlite.html#a772711beeceff7a567192e19abccfed4", null ],
+    [ "DeleteBooks", "class_sqlite.html#a8a83c22e036086edf84758fb0f6cfc56", null ],
+    [ "DeleteRecord", "class_sqlite.html#aa120de86db20f42a61a5c2eae9ad6b89", null ],
+    [ "DeleteUser", "class_sqlite.html#af2b581d800d01e1f1281d98ec1341ddd", null ],
+    [ "ExecSQL", "class_sqlite.html#a3d4be952cdb19b674a80dacd78e2873a", null ],
+    [ "Insert", "class_sqlite.html#a8d0c32df6db2b0ca13695cfa8780840e", null ],
+    [ "InsertBooks", "class_sqlite.html#a51b44b9e10f90888b36088adb6ec6226", null ],
+    [ "InsertRecord", "class_sqlite.html#a7271bf0e8252a9dc0969872faea228b4", null ],
+    [ "InsertUser", "class_sqlite.html#aaaa7d53dd288728640cde95e264f31f1", null ],
+    [ "Select", "class_sqlite.html#a9a39cca147a504c82e98261707aa1e8d", null ],
+    [ "SelectBooks", "class_sqlite.html#a045a181307b20222cd5a6c6f5f428281", null ],
+    [ "SelectBooksOfBorrow", "class_sqlite.html#ab9e451e38960661c5a493948453b63c7", null ],
+    [ "SelectRecord", "class_sqlite.html#a3c012aa302538385ce05d0b0371a9860", null ],
+    [ "SelectUser", "class_sqlite.html#aa540de99093cdea8160088a2c69872ee", null ],
+    [ "Updata", "class_sqlite.html#ae014031d1e0b0d9c412fb72ddc5a0043", null ],
+    [ "UpdataBooks", "class_sqlite.html#a6fc03a68c321e300dc540d0a48eabc70", null ],
+    [ "UpdataRecord", "class_sqlite.html#a5cb753f7b603cc450ef9527bf96d51f1", null ],
+    [ "UpdataUser", "class_sqlite.html#a7909130f3bbef819bd808c49c9249e2c", null ],
+    [ "UpdataUserStatus", "class_sqlite.html#a9827a7be15c19a7ecc943b701baa932b", null ]
+];
